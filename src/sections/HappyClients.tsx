@@ -1,5 +1,8 @@
 import React from 'react'
+// Importing the 'inter' font from the fonts folder
 import { inter } from '@/app/fonts/fonts';
+//Importing the Lottie image 
+import Lottie from '@/public/assets/images/lottie.svg';
 
 const HappyClients: React.FC = () => {
   return (
@@ -13,13 +16,13 @@ const HappyClients: React.FC = () => {
         </div>
         
         {/* Stats Section */}
-        <div className='w-4/6 flex bg-[#F8F8F8] rounded-xl gap-20 items-center justify-center'>
+        <div className='w-4/6 flex bg-[#F8F8F8] rounded-xl gap-20 items-center justify-center relative'>
             {/* $20B+ Settled Loans */}
             <div>
                 <h1 className='font-semibold text-black text-[73px] leading-[50px]'>
                     $20<span className='text-custom-red'>B+</span>
                 </h1>
-                <p className={`${inter.className} font-bold text-base text-[#606065] mt-7`}>
+                <p className={`${inter.className} font-bold text-base text-[#606065] mt-5`}>
                     Settled loans <span className='font-medium'>with <br />Australian banks</span>
                 </p>
             </div>
@@ -29,7 +32,7 @@ const HappyClients: React.FC = () => {
                 <h1 className='font-semibold text-black text-[73px] leading-[50px]'>
                     1k<span className='text-custom-red'>+</span>
                 </h1>
-                <p className={`${inter.className} font-bold text-base text-[#606065] mt-7`}>
+                <p className={`${inter.className} font-bold text-base text-[#606065] mt-5`}>
                     Referral Partners <span className='font-medium'>in<br /> our Network</span>
                 </p>
             </div>
@@ -39,11 +42,16 @@ const HappyClients: React.FC = () => {
                 <h1 className='font-semibold text-black text-[73px] leading-[50px]'>
                     150<span className='text-custom-red'>k+</span>
                 </h1>
-                <p className={`${inter.className} font-bold text-base text-[#606065] mt-7`}>
+                <p className={`${inter.className} font-bold text-base text-[#606065] mt-5`}>
                     Clients <span className='font-medium'>connected <br /> to banks</span>
                 </p>
             </div>
+            {/* lottie image */}
+            <div className='absolute -right-3 top-1'>
+                <Lottie />
+            </div>
         </div>
+
     </div>
   )
 }
