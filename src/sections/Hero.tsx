@@ -1,6 +1,7 @@
 import React from 'react'
 import ArrowAngle from "@/public/assets/icons/arrow-angle.svg"
 import HeroImg from "@/public/assets/images/hero.svg"
+import GroupImg from "@/public/assets/images/group.svg"
 import { inter } from '@/app/fonts/fonts'
 
 const Hero = () => {
@@ -16,7 +17,7 @@ const Hero = () => {
                 <button className='flex flex-row items-center rounded-[10px] gap-1 bg-[#ED1C24] text-white py-3 pr-2 pl-[26px] font-medium transition-all duration-300 transform  hover:bg-[#434A9F]'>Let&apos;s Schedule <ArrowAngle /></button>
             </div>
         </div>
-        <div className='mt-[-45px] ml-[-20px]'><HeroImg /></div>
+        <div className='mt-[-45px] ml-[-20px] mr-[-40px]'><GroupImg /></div>
     </div>
 
   )
