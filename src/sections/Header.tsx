@@ -1,13 +1,12 @@
 import React from 'react'
 import Logo from "@/public/assets/images/logo.svg"
-import ArrowDown from "@/public/assets/icons/arrow-down.svg"
 import Link from 'next/link'
 
 const Header = () => {
     const navLinks = [
         { item: "About Us", links: "/about-us", submenu: "false" },
         { item: "Home Loans", links: "/home-loans", submenu: "true" },
-        { item: "Refinancing", links: "/refinancing", submenu: "true" },
+        { item: "Refinancing", links: "/refinancing", submenu: "false" },
         { item: "Business Loans", links: "/business-loans", submenu: "true" },
         { item: "Vehicle Loans", links: "/vehicle-loans", submenu: "true" },
         { item: "Personal Loans", links: "/personal-loans", submenu: "true" },
