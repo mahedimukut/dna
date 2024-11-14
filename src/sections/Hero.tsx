@@ -1,6 +1,5 @@
 import React from 'react'
 import ArrowAngle from "@/public/assets/icons/arrow-angle.svg"
-import HeroImg from "@/public/assets/images/hero.svg"
 import GroupImg from "@/public/assets/images/group.svg"
 import { inter } from '@/app/fonts/fonts'
 

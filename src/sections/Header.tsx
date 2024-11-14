@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from "@/public/assets/images/logo.svg"
 import Link from 'next/link'
+import { inter } from '@/app/fonts/fonts'
 
 const Header = () => {
     const navLinks = [
@@ -18,7 +19,7 @@ const Header = () => {
             <nav>
                 <ul className='flex gap-5'>
                     {navLinks.map((sItem, index) => (
-                        <li key={index} className='text-[#606065] font-medium text-base leading-8 hover:text-black transition-all'>
+                        <li key={index} className={`text-[#606065] font-medium text-base leading-8 hover:text-black transition-all ${inter.className}`}>
                             <Link href={sItem.links} className='flex gap-2 items-center group'>
                                 {sItem.item}
                                 {sItem.submenu === "true" && (
