@@ -3,8 +3,15 @@ import Logo from "@/public/assets/images/logo.svg"
 import Link from 'next/link'
 import { inter } from '@/app/fonts/fonts'
 
-const Header = () => {
-    const navLinks = [
+// Type for the navLinks items
+interface NavLink {
+    item: string;
+    links: string;
+    submenu: "true" | "false"; 
+}
+
+const Header: React.FC = () => {
+    const navLinks: NavLink[] = [
         { item: "About Us", links: "/about-us", submenu: "false" },
         { item: "Home Loans", links: "/home-loans", submenu: "true" },
         { item: "Refinancing", links: "/refinancing", submenu: "false" },
@@ -40,7 +47,7 @@ const Header = () => {
                     ))}
                 </ul>
             </nav>
-            <button className="bg-[#ED1C24] py-[10px] px-5 text-[#FFFFFF] text-[20px] leading-[21px] rounded-[10px] font-medium text-center transition-all duration-300 transform  hover:bg-[#434A9F] hover:shadow-lg hover:shadow-[background: #434A9F]/50">
+            <button className="bg-custom-red py-[10px] px-5 text-white text-[20px] leading-[21px] rounded-[10px] font-medium text-center transition-all duration-300 transform  hover:bg-custom-blue hover:shadow-lg hover:shadow-custom-blue/50">
                 <Link href="/contact">
                     Free Consultation <br />
                     Book Now

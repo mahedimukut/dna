@@ -2,7 +2,7 @@ import { Poppins, Inter, Roboto, Montserrat } from 'next/font/google';
 
 {/* fonts */}
 export const poppins = Poppins({
-    weight: ['400', '500', '600', '700'],
+    weight: ['300', '400', '500', '600', '700'],
     subsets: ['latin'],
 });
   
