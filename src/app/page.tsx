@@ -7,7 +7,7 @@ import Cta from "@/sections/Cta";
 {/* homepage */}
 export default function Home() {
   return (
-    <div className="px-[60px]">
+    <div className="px-[60px] container">
       <Header />
       <Hero />
       <HappyClients />
