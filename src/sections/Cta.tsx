@@ -7,7 +7,7 @@ import Link from 'next/link';
 const Cta: React.FC = () => {
   return (
     <div className='flex w-full text-white gap-x-4 mb-[30px]'>
-      <div className='bg-custom-blue px-10 py-[30px] rounded-xl flex items-center justify-between w-10/12'>
+      <div className='bg-custom-blue px-[30px] py-[40px] rounded-xl flex items-center justify-between w-[80%]'>
         <h1 className='text-[50px] leading-[60px] font-normal'>
           Book for your <br />
           <span className='font-semibold'>Free consultation</span>
@@ -17,7 +17,7 @@ const Cta: React.FC = () => {
           Coverage for All Your <br /> Property Needs
         </p>
       </div>
-      <div className='bg-custom-blue py-[30px] px-20 rounded-xl flex items-center justify-center w-2/12'>
+      <div className='bg-custom-blue py-[40px] px-[30px] rounded-xl flex items-center justify-center w-[20%]'>
         <Link className='transition-all transform hover:scale-110 hover:rotate-12 duration-300 ease-in-out' href={"/contact"}>
             <CTA />
         </Link>
