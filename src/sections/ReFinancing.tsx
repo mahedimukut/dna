@@ -15,7 +15,7 @@ const tags: string[] = [
 
 const ReFinancing: React.FC = () => {
   return (
-    <div className="my-[30px] flex items-end w-full">
+    <div className="mt-[30px] mb-[60px] flex items-end">
       {/* Text & Tags Section */}
       <div className="flex-1">
         <div className="flex flex-col gap-3">

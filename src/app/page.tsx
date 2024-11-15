@@ -3,6 +3,7 @@ import Header from "@/sections/Header";
 import Hero from "@/sections/Hero";
 import HappyClients from "@/sections/HappyClients";
 import ReFinancing from "@/sections/ReFinancing";
+import Cta from "@/sections/Cta";
 {/* homepage */}
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <HappyClients />
       <ReFinancing />
+      <Cta />
     </div>
   );
 }
