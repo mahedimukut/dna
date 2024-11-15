@@ -12,7 +12,7 @@ const Cta: React.FC = () => {
           Book for your <br />
           <span className='font-semibold'>Free consultation</span>
         </h1>
-        <p className={`${inter.className} text-xl font-normal`}>
+        <p className={`${inter.className} text-xl font-normal pr-5`}>
           Get the <span className='font-bold'>Best Price</span> & <br />
           Coverage for All Your <br /> Property Needs
         </p>
